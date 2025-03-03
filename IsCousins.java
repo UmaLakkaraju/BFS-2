@@ -5,6 +5,8 @@ public class IsCousins {
     public boolean isCousins(TreeNode root, int x, int y) {
         if(root==null) return false;
         Queue<TreeNode> q = new LinkedList<>();
+        //space O(n)  as the x,y can be at leaf nodes ,level at which is n/2 nodes exist
+        // time Compexity O(n) all the nodes have to be checked for x,y in worest case senario.
         q.add(root);
         while(!q.isEmpty()){
             boolean isXChildfound = false;

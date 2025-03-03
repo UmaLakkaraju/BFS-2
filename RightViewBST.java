@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
-
+//space O(n)
+//time Compexity O(n) all the nodes have to be checked
+//if at each level only one child is present which is the parent of the next level child.
 public class RightViewBST {
     public List<Integer> rightSideView(TreeNode root) {
         List<Integer> result = new ArrayList<>();
